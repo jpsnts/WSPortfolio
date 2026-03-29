@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Midterm Task 2 - HTML list and Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            margin: 0;
+            padding: 40px 5%;
+        }
+        .container { 
+            max-width: 
+            1000px; 
+            margin: 0 auto; 
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+        }
+        
+        /*Yung Back Button*/
+        .back-btn {
+            background-color: #1271ac; 
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600;
+        }
+        .back-btn:hover { 
+            background-color: #0d5a8a; 
+        }
+        
+        /* Section Header */
+        .section-header-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-end;
+            margin-top: 40px; 
+            margin-bottom: 15px;
+        }
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #64748B; 
+            margin: 0; 
+        }
+
+        .view-live-btn {
+            background-color: #E2E8F0; 
+            color: #0F172A;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border-radius: 6px;
+            font-size: 0.9rem; 
+            font-weight: 600;
+            border: 1px solid #CBD5E1; 
+            transition: background-color 0.2s;
+        }
+
+        .view-live-btn:hover { 
+            background-color: #CBD5E1; 
+        }
+
+        .output-box {
+            background: white; 
+            border: 1px solid #CBD5E1; 
+            border-radius: 12px;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        iframe { 
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+
+        
+        /* Custom Scrollbar*/
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .code-box {
+            width: 100%;
+            height: 500px;
+            background: #1E293B;
+            color: #E2E8F0;
+            padding: 25px;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: none; 
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .code-box::-webkit-scrollbar-track { background: #1E293B; }
+        .code-box::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Midterm Task 2: HTML list and Table</h1>
+            <a href="../SJPortfolio.html" class="back-btn">Back to Portfolio</a>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output</div>
+            <a href="../MIDTERM TASKS/MID TASK 2.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../MIDTERM TASKS/MID TASK 2.html"></iframe>
+        </div>
+
+        <div class="section-title" style="margin-top: 40px; margin-bottom: 15px;">Source Code</div>
+        
+        <textarea class="code-box" readonly>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+             <title>act1</title>   
+</head>
+<body>
+  
+ <h2>UNORDERED and ORDERED LISTS</h2>
+
+    <ul>
+        <li>Item 1
+            <ul>
+                <li>Hello
+                    <ol type="a">
+                        <li>Hello</li>
+                        <li>Hi</li>
+                        <li>Goodbye
+                      
+                            <ul>
+                                 <li>Sayonara</li>
+                                 <li>Adios</li>
+                                 <li>Paalam</li>
+     </ul>
+          </li>
+                   </ol>
+                        </li>
+             
+                                 <li>Hi</li>
+                                 <li>Goodbye</li>
+              </ul>
+                                 </li>
+        <li>Item 2
+            <ul>
+                <li>Hello</li>
+                <li>Hi</li>
+                <li>Goodbye</li>
+            </ul>
+        </li>
+        </ul>
+
+    <ol>
+        <li>Item 3
+            <ol start="5">
+                <li>Hello</li>
+                <li>Hi</li>
+                <li>Goodbye</li>
+            </ol>
+           
+        
+        <li>Item 4
+            <ol start="5">
+                <li>Hello</li>
+                <li>Hi</li>
+                <li>Goodbye</li>
+            </ol>
+        </li>
+        </ol>
+
+ 
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%" style="text-align:center;">
+    
+    <tr>
+        <td colspan="4">Merging Table</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3"><center>A</center></td>
+        <td>B</td>
+        <td>C</td>
+        <td rowspan="3"><center>G</center></td>
+    </tr>
+
+    <tr>
+        <td colspan="2">D</td>
+    </tr>
+
+    <tr>
+        <td>E</td>
+        <td>F</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">H</td>
+    </tr>
+
+</table>
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        </textarea>
+
+
+    
+    </div>
+
+</body>
+</html>

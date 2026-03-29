@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Midterm Task 5: Applying CSS in Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            margin: 0;
+            padding: 40px 5%;
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+        }
+        
+        .back-btn {
+            background-color: #1271ac; 
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600;
+        }
+        .back-btn:hover { 
+            background-color: #0d5a8a; 
+        }
+        
+        .section-header-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-end;
+            margin-top: 40px; 
+            margin-bottom: 15px;
+        }
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #64748B; 
+            margin: 0; 
+        }
+
+        .view-live-btn {
+            background-color: #E2E8F0; 
+            color: #0F172A;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border-radius: 6px;
+            font-size: 0.9rem; 
+            font-weight: 600;
+            border: 1px solid #CBD5E1; 
+            transition: background-color 0.2s;
+        }
+
+        .view-live-btn:hover { 
+            background-color: #CBD5E1; 
+        }
+
+        .output-box {
+            background: white; 
+            border: 1px solid #CBD5E1; 
+            border-radius: 12px;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        iframe { 
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .code-box {
+            width: 100%;
+            height: 500px;
+            background: #1E293B;
+            color: #E2E8F0;
+            padding: 25px;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: none; 
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .code-box::-webkit-scrollbar-track { background: #1E293B; }
+        .code-box::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Midterm Task 5: Applying CSS in Resume</h1>
+            <a href="../SJPortfolio.html" class="back-btn">Back to Portfolio</a>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output</div>
+            <a href="../MIDTERM TASKS/MID TASK 5.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../MIDTERM TASKS/MID TASK 5.html"></iframe>
+        </div>
+
+        <div class="section-title" style="margin-top: 40px; margin-bottom: 15px;">Source Code</div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Resume - John Paul M. Santos</title>
+    <style>
+        body {
+            background-color: WhiteSmoke; 
+            margin: 100px; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            color: DarkSlateGray; 
+        }
+  
+        .section-header {x
+            color: MidnightBlue; 
+            border-bottom: 2px solid MidnightBlue; 
+            padding-bottom: 5px;
+            margin-top: 30px;
+            text-transform: uppercase; 
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: DimGray;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+       
+
+        #contact{
+            text-align: center;
+            line-height: 1.5; 
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+
+        p {
+            text-align: justify;
+            line-height: 1.6; 
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+
+        #references-table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        #references-table th {
+            background-color: MidnightBlue; 
+            color: White;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #references-table td {
+            border: 1px solid LightGray; 
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none; 
+            font-weight: bold;
+            transition: color 0.3s ease; 
+        }
+
+        a:link { color: RoyalBlue; }       
+        a:visited { color: SlateGray; }    
+        a:hover { color: Chocolate; }      
+        a:active { color: FireBrick; }     
+
+        .navi {
+            text-align: center;
+            background-color: Gainsboro;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        hr {
+            border: 0;
+            border-top: 1px solid LightGray;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="top-of-page"></div>
+
+    <div style="text-align: center;">
+        <img src="jp.jpg" alt="Profile Picture" style="width: 150px; height: 150px; border: 4px solid MidnightBlue; border-radius: 20%; object-fit: cover;">
+    </div>
+
+    <div id="contact">
+        <h1 style="margin: 10px 0; color: MidnightBlue;">John Paul M. Santos</h1>
+        <strong>Address:</strong> Arayat, Pampanga, 2012 <br>
+        <strong>Email:</strong> <a href="mailto:jpsantos2663@iskwela.psau.edu.ph">jpsantos2663@iskwela.psau.edu.ph</a> <br>
+        <strong>Phone:</strong> 09923970643 | <strong>LinkedIn:</strong> paulmanicdao8
+    </div>
+
+    <div class="navi">
+       
+        <a href="#summary">Summary |</a> 
+        <a href="#education">Education |</a> 
+        <a href="#experience">Experience |</a> 
+        <a href="#skills">Skills |</a> 
+        <a href="#references-table">References</a>
+    </div>
+
+    <hr>
+
+    <h2 id="summary" class="section-header">Career Objective</h2>
+    <p>
+       To build a strong foundation in information technology by applying academic knowledge
+       to practical environments, while continuously developing technical competence,
+       discipline, and adaptability in preparation for future roles in the IT industry.
+    </p>
+
+    <h2 class="section-header">Expertise Bio</h2>
+    <p>
+        A first-year Bachelor of Science in Information Technology student who is currently
+        building a strong foundation in computer systems and basic programming. Curious,
+        eager to learn, and open to feedback, with a genuine interest in understanding how
+        technology works and how it can be used to solve everyday problems.
+    </p>
+
+    <h2 id="education" class="section-header">Education</h2>
+    
+    <h3>Tertiary</h3>    
+    <ul>
+        <li>
+            <b>Bachelor of Science in Information Technology</b><br>
+            Pampanga State Agricultural University (2025 - Present)
+        </li>
+        <li style="margin-top:10px;">
+            <b>Bachelor of Science in Geodetic Engineering</b><br>
+            Pampanga State Agricultural University (2022 - 2025)
+        </li>
+    </ul>
+    
+    <h3>Secondary</h3>  
+    <ul>
+        <li>
+            <b>STEM Strand</b><br>
+            Holy Cross College - Pampanga (2020 - 2022)
+        </li>   
+        <li style="margin-top:10px;">
+            <b>Junior High School</b><br>
+            Justino Sevilla High School - Pampanga (2016 - 2020)
+        </li>   
+    </ul>
+  
+  <h3>Primary</h3>  
+    
+     <ul>
+        <li><b>San Nicolas Elementary School</b><br>
+        Arayat, Pampanga<br>
+        2010 -2016
+        </li> 
+    
+     </ul>
+
+    <h2 id="experience" class="section-header">Work Experience & Seminars</h2>
+    <ul>
+        <li><b>Graphic Designer</b> | Freelancer (Present)</li>
+        <li><b>Appointment Setter</b> | Setting the Standards Ltd. (2023 - 2025)</li>
+        <li><b>Certified First Aider</b> | Philippine Red Cross (May 2025)</li>
+        <li><b>Safety Officer (SO2)</b> | QESH Training Center (Dec 2024)</li>
+        <li><b>Visual Graphic Design NC III</b> | TESDA (May 2024)</li>
+    </ul>
+
+    <h2 id="skills" class="section-header">Technical Skills</h2>
+    
+    <h3>Hardware</h3>
+    <ul>
+        <li>Basic computer assembly & Part identification</li>
+        <li>Basic hardware troubleshooting</li>
+    </ul>
+
+    <h3>Software</h3>
+    <ul>
+        <li><b>Programming:</b> HTML, Java (Basic), Python (Basic)</li>
+        <li><b>Tools:</b> Adobe Creative Suite, Microsoft Office (Word, Excel, PPT)</li>
+    </ul>
+    
+    <h3>Soft Skills</h3>
+    <ul>
+        <li>Communication, Time Management, Teamwork, Adaptability</li>
+    </ul>
+
+    <h2 class="section-header">References</h2>
+    <table id="references-table">
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Email</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>Angelica B. Ang Jr</td>
+            <td>Registered Nurse</td>
+            <td>angjr@gmail.com</td>
+            <td>09923970643</td>
+        </tr>
+        <tr>
+            <td>Mary Juvina D. Mungcal</td>
+            <td>Payroll Officer</td>
+            <td>mjmungcal@gmail.com</td>
+            <td>09685248963</td>
+        </tr>
+        <tr>
+            <td>Raychelle B. Venzon</td>
+            <td>Licensed Prof. Teacher</td>
+            <td>rvenzon@gmail.com</td>
+            <td>09537528982</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <p style="text-align: center; font-size: 12px; color: DimGray;">
+        <i>I <u>HEREBY CERTIFY</u> that the information provided in this form is complete, true, and correct to the best of my knowledge.</i>
+    </p>
+
+    <div style="text-align: right; margin-top: 30px;">
+        <a href="#top-of-page" style="font-size: 14px;"> Back to Top</a>
+    </div>
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+    </div>
+
+</body>
+</html>

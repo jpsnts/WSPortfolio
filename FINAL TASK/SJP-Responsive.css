@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.5;
+}
+
+.p {
+    margin: 20px;
+}
+
+
+.header {
+    background-color: #00a86b;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin: 5px 0 0 0;
+}
+
+
+.sidebar-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-left li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.sidebar-left li.active a {
+    background-color: #00a86b;
+    color: white;
+    border-color: #00a86b;
+}
+
+.sidebar-left li.active a:hover {
+    background-color: #00a86b;
+}
+
+.sidebar-left li a:hover {
+    background-color: #e0e0e0;
+}
+
+
+.content a {
+    color: #333;
+}
+
+.sidebar-right {
+    background-color: #3498db;
+    color: white;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar-right h4 {
+    margin-top: 0;
+    padding: 10;
+}
+
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+
+}
+
+.sidebar-left {
+    flex: 2; 
+}
+
+.content {
+    flex: 4; 
+    
+}
+
+.sidebar-right {
+    flex: 1.5; 
+}
+
+
+@media screen and (max-width: 900px) {
+    .sidebar-left {
+        flex: 1; 
+    }
+
+    .content {
+        flex: 2; 
+        padding: 5px; 
+
+    }
+
+    .sidebar-right {
+        flex: 0.5; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column; 
+    }
+
+    .content {
+        padding: 10px; 
+    }
+
+     .sidebar-left,
+
+    .sidebar-left,
+    .content,
+    .sidebar-right {
+        flex: 1; 
+        margin-top: 10px; 
+    }
+}

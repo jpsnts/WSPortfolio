@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Midterm Task 6 - Semantic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            margin: 0;
+            padding: 40px 5%;
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+        }
+        
+        .back-btn {
+            background-color: #1271ac; 
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600;
+        }
+        .back-btn:hover { 
+            background-color: #0d5a8a; 
+        }
+        
+        .section-header-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-end;
+            margin-top: 40px; 
+            margin-bottom: 15px;
+        }
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #64748B; 
+            margin: 0; 
+        }
+
+        .view-live-btn {
+            background-color: #E2E8F0; 
+            color: #0F172A;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border-radius: 6px;
+            font-size: 0.9rem; 
+            font-weight: 600;
+            border: 1px solid #CBD5E1; 
+            transition: background-color 0.2s;
+        }
+
+        .view-live-btn:hover { 
+            background-color: #CBD5E1; 
+        }
+
+        .output-box {
+            background: white; 
+            border: 1px solid #CBD5E1; 
+            border-radius: 12px;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        iframe { 
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .code-box {
+            width: 100%;
+            height: 500px;
+            background: #1E293B;
+            color: #E2E8F0;
+            padding: 25px;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: none; 
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .code-box::-webkit-scrollbar-track { background: #1E293B; }
+        .code-box::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Midterm Task 6: Semantic</h1>
+            <a href="../SJPortfolio.html" class="back-btn">Back to Portfolio</a>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output</div>
+            <a href="../MIDTERM TASKS/MID TASK 6.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../MIDTERM TASKS/MID TASK 6.html"></iframe>
+        </div>
+
+        <div class="section-title" style="margin-top: 40px; margin-bottom: 15px;">Source Code</div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Midterm Task 6 - Semantic</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        header,
+        footer {
+            background-color: bisque;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        header h1 {
+            text-align: center;
+        }
+        
+        nav {
+            background-color: grey;
+            height: 50px;
+        }
+        
+      	main {
+   	   overflow: hidden;
+   	   padding: 0;
+	}
+
+        aside {
+   	   background-color: white;
+  	   width: 20%;
+   	   float: left;
+	   margin: 0px;
+  	   padding: 10px;
+	}
+
+        section,
+	article {
+   	   background-color: white;
+   	   width: 40%;
+   	   float: left;
+   	   padding: 10px;
+	   margin: 0px;
+
+	}
+        
+                
+        footer {
+            background-color: bisque;
+            height: 100px;
+            clear: both;
+            text-align: center;
+        }
+        
+        p {
+            text-align: justify;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #e81111;
+        }
+        
+        @media screen and (max-width:800px) {
+            aside,
+            section,
+            article {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>This is a Header</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+        </aside>
+
+        <section>
+            <h2>Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem deserunt, laudantium harum corporis maiores esse est provident autem odio quasi accusantium id quia debitis temporibus doloremque cum sunt expedita?</p>
+        </article>
+    </main>
+
+    <footer>
+        <h2>This is a Footer</h2>
+    </footer>
+
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+    </div>
+
+</body>
+</html>

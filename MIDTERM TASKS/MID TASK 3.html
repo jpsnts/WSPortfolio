@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP</title>
+</head>
+<body>
+
+    <h2>How can we help?</h2>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Request for Proposal</legend>
+
+            <table border="0">
+                <tr>
+                    <td>Your company:</td>
+                    <td><input type="text" name="company"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                
+                <tr>
+                    <td valign="top">Your business:</td>
+                    <td>
+                        <textarea name="business" rows="4" cols="30" placeholder="Briefly describe your business in this space"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">Company Size:</td>
+                    <td>
+                        <input type="radio" name="size" value="less10"> Less than 10<br>
+                        <input type="radio" name="size" value="11to50"> 11 to 50<br>
+                        <input type="radio" name="size" value="50to200"> 50 to 200<br>
+                        <input type="radio" name="size" value="over200"> Over 200
+                    </td>
+                </tr>
+                <tr>
+                    <td>Services:</td>
+                    <td>
+                        <input type="checkbox" name="service" value="brand"> Brand Identity
+                        <input type="checkbox" name="service" value="website"> New Website
+                        <input type="checkbox" name="service" value="redesign"> Web Redesign
+                    </td>
+                </tr>
+                <tr>
+                    <td>Timeline:</td>
+                    <td>
+                        <select name="timeline">
+                            <option>Immediately</option>
+                            <option>1-2 Weeks</option>
+                            <option>3-6 Weeks</option>
+                            <option>7-2 Months</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td> <td>
+                        <button type="submit">Send to dev / design</button>
+                    </td>
+                </tr>
+                
+            </table>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

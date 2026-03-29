@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Midterm Task 1 - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            margin: 0;
+            padding: 40px 5%;
+        }
+        .container { 
+            max-width: 
+            1000px; 
+            margin: 0 auto; 
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+        }
+        
+        /*Yung Back Button*/
+        .back-btn {
+            background-color: #1271ac; 
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600;
+        }
+        .back-btn:hover { 
+            background-color: #0d5a8a; 
+        }
+        
+        /* Section Header */
+        .section-header-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-end;
+            margin-top: 40px; 
+            margin-bottom: 15px;
+        }
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #64748B; 
+            margin: 0; 
+        }
+
+        .view-live-btn {
+            background-color: #E2E8F0; 
+            color: #0F172A;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border-radius: 6px;
+            font-size: 0.9rem; 
+            font-weight: 600;
+            border: 1px solid #CBD5E1; 
+            transition: background-color 0.2s;
+        }
+
+        .view-live-btn:hover { 
+            background-color: #CBD5E1; 
+        }
+
+        .output-box {
+            background: white; 
+            border: 1px solid #CBD5E1; 
+            border-radius: 12px;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        iframe { 
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+
+        
+        /* Custom Scrollbar*/
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .code-box {
+            width: 100%;
+            height: 500px;
+            background: #1E293B;
+            color: #E2E8F0;
+            padding: 25px;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: none; 
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .code-box::-webkit-scrollbar-track { background: #1E293B; }
+        .code-box::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Midterm Task 1: Resume</h1>
+            <a href="../SJPortfolio.html" class="back-btn">Back to Portfolio</a>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output</div>
+            <a href="../MIDTERM TASKS/MID TASK 1.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../MIDTERM TASKS/MID TASK 1.html"></iframe>
+        </div>
+
+        <div class="section-title" style="margin-top: 40px; margin-bottom: 15px;">Source Code</div>
+        
+        <textarea class="code-box" readonly>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>RESUME</title>
+        </head>
+
+        <body>
+
+        
+                <img src="jp.jpg" width="150" height="150">
+            <br>
+            <b>John Paul M. Santos</b> <br>
+                <b>Phone:</b> 09923970643<br>
+                <b>Address:</b>Arayat, Pampanga, 2012 <br>
+                <b> Email: </b> <a href=mailto:jpsantos2663@iskwela.psau.edu.ph>
+                    jpsantos2663@iskwela.psau.edu.ph</a>
+                <br><b>Linked: </b> paulmanicdao8
+            
+            </br>
+        
+
+            <hr>
+
+            <h2>Career Objective</h2>
+            <p>
+            To build a strong foundation in information technology by applying academic knowledge
+            to practical environments, while continuously developing technical competence,
+            discipline, and adaptability in preparation for future roles in the IT industry.
+
+        <hr>
+
+            <h2>Expertise Bio</h2>
+            <p>
+                A first-year Bachelor of Science in Information Technology student who is currently
+            building a strong foundation in computer systems and basic programming. Curious,
+            eager to learn, and open to feedback, with a genuine interest in understanding how
+            technology works and how it can be used to solve everyday problems.
+            </p>
+
+        <hr>
+
+            <h2>Education</h2>
+                
+                
+            <h3>Tertiary</h3>    
+            <ul>
+                <li><b>Bachelor of Science in Information Technology</b><br>
+                Pampanga State Agricultural University<br>
+                2025 - Present
+                </li>
+            </ul>
+
+            <ul>
+                <li><b>Bachelor of Science in Geodetic Engineering</b><br>
+                Pampanga State Agricultural University<br>
+                2022 - 2025
+                </li>
+            </ul>
+            
+            <h3>Secondary</h3>  
+                
+                
+            <ul>
+                <li><b>Science Technology Engineering and Mathematics (STEM)</b><br>
+                Holy Cross College - Pampanga<br>
+                2020 -2022
+                </li>   
+            </ul>
+                
+            <ul>
+                <li><b>Junior High School</b><br>
+                Justino Sevilla High School - Pampanga<br>
+                2016 -2020
+                </li>   
+            </ul>
+                
+            <h3>Primary</h3>  
+            
+            <ul>
+                <li><b>San Nicolas Elementary School</b><br>
+                Arayat, Pampanga<br>
+                2010 -2016
+                </li> 
+            
+            </ul>
+
+        <hr>
+
+            <h2>Work Experience / Seminars and Workshops Attended</h2>
+            <ul>
+                <li> <b>Graphic Designer</b> <br>
+                <i>Freelancer</i><br>
+                Present</li>
+            </ul>
+
+            <ul>
+                <li> <b>Appointment Setter</b> <br>
+                <i>Setting the Standards Ltd.</i><br>
+                2023 - 2025</li>
+            </ul>
+
+                <ul>    
+                <li> <b>    Certified First Aider (PRC)</b> <br>
+                <i>Philippine Red Cross - Valenzuela Chapter</i><br>
+                Standard First Aid with Basic Life Support(BLS) <br>
+                May 2025</li>
+            </ul>
+            
+            <ul>
+                <li> <b>Safety Officer (SO2)</b> <br>
+                <i>QESH Training Center</i><br>
+                Completed 40-hour Construction Occupational Safety and Health Training <br>
+                December 2024</li>
+            </ul>
+
+            <ul>
+                <li> <b>Visual Graphic Design NC III</b> <br>
+                <i>Technical Education and Skills Development Authority (TESDA)</i><br>
+                May 2024</li>
+            </ul>
+
+        <hr>
+
+            <h2>Hardware Skills</h2>
+            <ul>
+                <li>Basic computer assembly</li>
+                <li>Identifying computer parts</li>
+                <li>Basic hardware troubleshooting</li>
+            </ul>
+
+        <hr>
+            <h2>Software Skills</h2>
+            <ul>
+                <li>Basic HTML</li>
+                <li>Basic Java Programming</li>
+                <li>Basic Python Programming</li>
+                <li>Adobe Suite</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Microsoft Excel</li>
+            </ul>
+
+        <hr>
+
+            <h2>Additional Skills</h2>
+            <ul>
+                <li>Good communication skills</li>
+                <li>Time management</li>
+                <li>Teamwork</li>
+                <li>Willingness to learn</li>
+            </ul>
+
+        <hr>
+
+        <h2>References</h2>
+        <table border="1" cellpadding="5" cellspacing="0" width="90%">
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Email</th>
+                <th>Contact Number</th>
+            </tr>
+            <tr>
+                <td>Angelica B. Ang </td>
+                <td>Registered Nurse</td>
+                <td>angjr@gmail.com</td>
+                <td>0923970643</td>
+            </tr>
+            <tr>
+                <td>Mary Juvina D. Mungcal</td>
+                <td>Payroll Officer</td>
+                <td>mjmungcal@gmail.com</td>
+                <td>09685248963</td>
+            </tr>
+            <tr>
+                <td>Raychelle B. Venzon</td>
+                <td>Licensed Professional Teacher</td>
+                <td>rvenzon@gmail.com</td>
+                <td>09537528982</td>
+            </tr>
+        </table>
+
+
+        <p><br><i>I <u>HEREBY CERTIFY</u> that the information provided in this form is complete, true, and correct to the best of my knowledge.</i></p>
+
+                
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        </textarea>
+
+
+    
+    </div>
+
+</body>
+</html>
