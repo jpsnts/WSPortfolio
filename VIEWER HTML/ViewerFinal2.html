@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Final Task 2 - Using CSS Positions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            margin: 0;
+            padding: 40px 5%;
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+        }
+        
+        .back-btn {
+            background-color: #1271ac; 
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600;
+        }
+        .back-btn:hover { 
+            background-color: #0d5a8a; 
+        }
+        
+        .section-header-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-end;
+            margin-top: 40px; 
+            margin-bottom: 15px;
+        }
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #64748B; 
+            margin: 0; 
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-live-btn {
+            background-color: #E2E8F0; 
+            color: #0F172A;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border-radius: 6px;
+            font-size: 0.9rem; 
+            font-weight: 600;
+            border: 1px solid #CBD5E1; 
+            transition: background-color 0.2s;
+        }
+
+        .view-live-btn:hover { 
+            background-color: #CBD5E1; 
+        }
+
+        .output-box {
+            background: white; 
+            border: 1px solid #CBD5E1; 
+            border-radius: 12px;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        iframe { 
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .code-box {
+            width: 100%;
+            height: 500px;
+            background: #1E293B;
+            color: #E2E8F0;
+            padding: 25px;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: none; 
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .code-box::-webkit-scrollbar-track { background: #1E293B; }
+        .code-box::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>FinalTask 2: Using CSS Positions</h1>
+            <a href="../index.html" class="back-btn">Back to Portfolio</a>
+        </div>
+
+         <div class="section-header-row">
+            <div class="section-title">Browser Output</div>
+            <div class="button-group">
+                <a href="../FINAL TASK/SJP-CSSPositions.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+            </div>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../FINAL TASK/SJP-CSSPositions.html"></iframe>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">HTML Code</div>
+            <a href="C8.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Task 2 - CSS Positions</title>
+    <link rel="stylesheet" href="F2CSS_SantosJP.css">
+</head>
+<body>
+
+    <div class="close">X</div>
+
+    <div class="container">
+        <img src="shirt.png" alt="Shirt">
+        
+        <div class="discount">20% OFF</div>
+        
+        <div class="overlay">
+            <button class="cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="fixed-box"></div>
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+    
+<div class="section-header-row">
+            <div class="section-title">CSS Code</div>
+            <a href="C81.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+    body {
+    height: 3000px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    height: 180px;
+    background-color: gray;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    background-color: #d3d3d3;
+}
+
+.container img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.discount {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cart:hover {
+    background-color: black;
+    color: white;
+}
+    
+
+</body>
+</html>
