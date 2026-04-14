@@ -1,0 +1,78 @@
+body {
+    height: 3000px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    height: 180px;
+    background-color: gray;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    background-color: #d3d3d3;
+}
+
+.container img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.discount {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cart:hover {
+    background-color: black;
+    color: white;
+}
