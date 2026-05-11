@@ -295,6 +295,25 @@
             .timeline-card { text-align: left; }
             .task-category { text-align: center; }
         }
+        @media (max-width: 1024px) {
+            .hero {
+                align-items: start;
+                padding-top: 140px;
+                padding-bottom: 60px;
+            }
+            
+            .hero-img img {
+                max-height: 380px;
+            }
+        
+            .hero-container, .intro-container, .timeline-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-text h1 { font-size: 3.5rem; }
+            .hero-text, .message-card { display: flex; flex-direction: column; align-items: center; }
+            .social-links, .signature { justify-content: center; }
+            .intro-img { order: -1; }
+            .timeline-card { text-align: left; }
+            .task-category { text-align: center; }
+        }
 
         @media (max-width: 768px) {
             .hamburger { display: block; }
