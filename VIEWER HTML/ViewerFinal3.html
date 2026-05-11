@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Final Task 3 - Integrating Bootstrap in your web design workflow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            margin: 0;
+            padding: 40px 5%;
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+        h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+        }
+        
+        .back-btn {
+            background-color: #1271ac; 
+            color: white; 
+            text-decoration: none;
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600;
+        }
+        .back-btn:hover { 
+            background-color: #0d5a8a; 
+        }
+        
+        .section-header-row {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-end;
+            margin-top: 40px; 
+            margin-bottom: 15px;
+        }
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #64748B; 
+            margin: 0; 
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-live-btn {
+            background-color: #E2E8F0; 
+            color: #0F172A;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border-radius: 6px;
+            font-size: 0.9rem; 
+            font-weight: 600;
+            border: 1px solid #CBD5E1; 
+            transition: background-color 0.2s;
+        }
+
+        .view-live-btn:hover { 
+            background-color: #CBD5E1; 
+        }
+
+        .output-box {
+            background: white; 
+            border: 1px solid #CBD5E1; 
+            border-radius: 12px;
+            padding: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        iframe { 
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .code-box {
+            width: 100%;
+            height: 500px;
+            background: #1E293B;
+            color: #E2E8F0;
+            padding: 25px;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: none; 
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .code-box::-webkit-scrollbar-track { background: #1E293B; }
+        .code-box::-webkit-scrollbar-thumb { background: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>FinalTask 3: Integrating Bootstrap in your web design workflow</h1>
+            <a href="../index.html" class="back-btn">Back to Portfolio</a>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output (Layout 1)</div>
+            <div class="button-group">
+                <a href="../FINAL TASK/SJP-Layout1.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+            </div>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../FINAL TASK/SJP-Layout1.html"></iframe>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">HTML Code</div>
+            <a href="F1.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Layout 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>50% desktop <br> 100% mobile</h2>
+        <div class="row">
+            <div class="col-12 col-lg-6 bg-primary text-white p-3 border border-light">1</div>
+            <div class="col-12 col-lg-6 bg-success text-white p-3 border border-light">2</div>
+            <div class="col-12 col-lg-6 bg-success text-white p-3 border border-light">3</div>
+            <div class="col-12 col-lg-6 bg-danger text-white p-3 border border-light">4</div>
+        </div>
+    </div>
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output (Layout 2)</div>
+            <div class="button-group">
+                <a href="../FINAL TASK/SJP-Layout2.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+            </div>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../FINAL TASK/SJP-Layout2.html"></iframe>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">HTML Code</div>
+            <a href="F2.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Layout 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>50% , 25% and 25% desktop <br> 100% mobile</h2>
+        <div class="row">
+            <div class="col-12 col-lg-6 bg-primary text-white p-3 border border-light">1</div>
+            <div class="col-12 col-lg-3 bg-success text-white p-3 border border-light">2</div>
+            <div class="col-12 col-lg-3 bg-success text-white p-3 border border-light">3</div>
+        </div>
+    </div>
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output (Layout 3)</div>
+            <div class="button-group">
+                <a href="../FINAL TASK/SJP-Layout3.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+            </div>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../FINAL TASK/SJP-Layout3.html"></iframe>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">HTML Code</div>
+            <a href="F3.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Layout 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>40% and 60% desktop  <br> 100% mobile</h2>
+        <div class="row">
+            <div class="col-12 col-lg-4 bg-primary text-white p-3 border border-light">1</div>
+            <div class="col-12 col-lg-8 bg-success text-white p-3 border border-light">2</div>
+        </div>
+    </div>
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+        <div class="section-header-row">
+            <div class="section-title">Browser Output (Layout 4)</div>
+            <div class="button-group">
+                <a href="../FINAL TASK/SJP-Layout4.html" target="_blank" class="view-live-btn">View Full in New Tab</a>
+            </div>
+        </div>
+        
+        <div class="output-box">
+            <iframe src="../FINAL TASK/SJP-Layout4.html"></iframe>
+        </div>
+
+        <div class="section-header-row">
+            <div class="section-title">HTML Code</div>
+            <a href="F4.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJP Layout 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid mt-5 mb-5 p-5">
+        <h2 class="text-center my-4">Bootstrap Grid Responsive</h2>
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-card">
+                    <h1 class="display-4">01</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis maxime possimus assumenda quidem, soluta est quia harum dicta qui delectus corporis cupiditate saepe molestiae quod veniam neque quasi amet?</p>
+                    <button class="btn btn-primary">Read more...</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-card">
+                    <h1 class="display-4">02</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. adipisicing elit. Magni quis facilis porro illo molestiae! Cum eaque commodi impedit labore. Beatae, quidem tempore. Optio impedit commodi nemo dignissimos autem? Dolore, nostrum.</p>
+                    <button class="btn btn-primary">Read more...</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-card">
+                    <h1 class="display-4">03</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident labore eos aperiam fuga numquam delectus velit nam, blanditiis voluptates doloribus in aliquam, inventore perspiciatis tempora temporibus quos dignissimos optio.</p>
+                    <button class="btn btn-primary">Read more...</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+        <div class="section-header-row">
+            <div class="section-title">CSS Code Layout 4</div>
+            <a href="F5.png" target="_blank" class="view-live-btn">View Code Picture</a>
+        </div>
+        
+        <textarea class="code-box" readonly>
+.custom-card {
+    padding: 40px;
+    border: 1px solid #9c9c9cdb;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 100%; 
+}
+
+.custom-card h1 {
+    color: blue;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.custom-card p {
+    color: rgb(80, 80, 80);
+    margin-bottom: 30px;
+}</textarea>
+
+    </div>
+
+</body>
+</html>
