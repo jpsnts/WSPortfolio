@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SJP | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>John Paul Santos | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="SJPortfolio.css">
-    
 </head>
 <body>
 
     <header>
-        <div class="logo">S<span>JP</span></div>
+        <a href="#hero" class="logo">S<span>JP</span></a>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
         <ul class="nav-links">
@@ -24,40 +23,54 @@
         </ul>
     </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="yt-overlay">
             <iframe src="https://www.youtube.com/embed/aDm8e4WYXKw?autoplay=1&loop=1&mute=1&controls=0&playlist=aDm8e4WYXKw" frameborder="0"></iframe>
         </div>
         <div class="hero-tint"></div>
         <div class="hero-container">
             <div class="hero-text">
-                <h1>John Paul<br>Santos</h1>
+                <div class="status-pill">
+                    <span class="indicator"></span> Available for Work & Internships
+                </div>
+                <h1>John Paul<br><span>Santos</span></h1>
                 <p>IT Student & Frontend Developer</p>
-                <div class="social-links">
-                    <a href="mailto:jpsantos2663@iskwela.psau.edu.ph"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/jpsnts" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/john-paul-santos-b81419303" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <div class="social-links">
+                        <a href="mailto:jpsantos2663@iskwela.psau.edu.ph" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/jpsnts" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/john-paul-santos-b81419303" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="hero-img">
-                <img src="PICTURES/jpp.png" alt="JP Profile">
+                <div class="img-glow"></div>
+                <img src="PICTURES/jpp.png" alt="John Paul Santos">
             </div>
         </div>
     </section>
 
     <section id="about" class="intro">
         <div class="intro-container">
-            <div class="message-card reveal">
-                <h2>A Message from the Developer</h2>
-                <p>Hi! I am <strong>John Paul Santos</strong>, a passionate IT student and freelance graphic designer based in Arayat, Pampanga. I love bridging the gap between creative design and technical logic to build modern, functional digital experiences.</p>
-                <p>My journey into tech wasn't a straight line. I initially spent three years studying engineering before taking a leap of faith to shift into Information Technology. It was the best decision I've made, as it allowed me to focus on what I truly love: writing code and developing digital solutions.</p>
-                <div class="signature">
-                    <span class="sig-name">John Paul Santos</span>
-                    <span class="sig-role">FRONTEND DEVELOPER</span>
+            <div class="intro-img reveal">
+                <div class="img-wrapper">
+                    <img src="PICTURES/pol.png" alt="JP Portrait">
                 </div>
             </div>
-            <div class="intro-img reveal">
-                <img src="PICTURES/pol.png" alt="JP Portrait">
+            <div class="message-card reveal">
+                <div class="card-header">
+                    <span class="overline">Professional Profile</span>
+                    <h2>Bridging Design & Logic</h2>
+                </div>
+                <p>Hi! I am <strong>John Paul Santos</strong>, a passionate IT student and UI/UX focused Frontend Developer based in Arayat, Pampanga. I specialize in building highly structured, scalable, and visually compelling digital interfaces.</p>
+                <p>My foundational background includes three years in Geodetic Engineering prior to fully committing to Information Technology. This multi-disciplinary transition honed my analytical problem-solving skills, allowing me to execute complex technical requirements with architectural precision.</p>
+                <div class="signature">
+                    <div class="sig-details">
+                        <span class="sig-name">John Paul Santos</span>
+                        <span class="sig-role">Frontend Developer / IT Student</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -65,7 +78,7 @@
     <section id="education" class="timeline">
         <div class="timeline-container">
             <div class="timeline-col">
-                <h2 class="reveal">Education</h2>
+                <h2 class="section-title reveal">Education</h2>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
@@ -101,14 +114,14 @@
                 </div>
             </div>
             <div class="timeline-col">
-                <h2 class="reveal">Experience</h2>
+                <h2 class="section-title reveal">Experience</h2>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <img src="PICTURES/F COVER.png" class="timeline-logo" alt="Freelance">
                         <div class="timeline-info">
-                            <h4>Graphic Designer</h4>
-                            <p class="timeline-org">Independent Freelancer</p>
+                            <h4>Freelance Graphic Designer</h4>
+                            <p class="timeline-org">Independent / Client Consulting</p>
                             <span class="timeline-date">Present</span>
                         </div>
                     </div>
@@ -118,74 +131,126 @@
     </section>
 
     <section id="skills" class="skills">
-        <h2 class="reveal">Technical Stack</h2>
-        <div class="skills-container reveal">
-            <div class="skill-item"><img src="ICONS/HTML.png" alt="HTML"><span>HTML5</span></div>
-            <div class="skill-item"><img src="ICONS/CSS.png" alt="CSS"><span>CSS3</span></div>
-            <div class="skill-item"><img src="ICONS/JS.png" alt="JS"><span>JavaScript</span></div>
-            <div class="skill-item"><img src="ICONS/JAVA.png" alt="Java"><span>Java</span></div>
-            <div class="skill-item"><img src="ICONS/PHYTON.png" alt="Python"><span>Python</span></div>
-            <div class="skill-item"><img src="ICONS/FIGMA.png" alt="Figma"><span>Figma</span></div>
-            <div class="skill-item"><img src="ICONS/ADOBE.png" alt="Adobe"><span>Adobe</span></div>
-            <div class="skill-item"><img src="ICONS/CANVA.png" alt="Canva"><span>Canva</span></div>
+        <div class="skills-wrapper">
+            <span class="overline reveal">Core Capabilities</span>
+            <h2 class="section-title reveal">Technical Stack</h2>
+            <div class="skills-container reveal">
+                <div class="skill-item"><img src="ICONS/HTML.png" alt="HTML"><span>HTML5</span></div>
+                <div class="skill-item"><img src="ICONS/CSS.png" alt="CSS"><span>CSS3</span></div>
+                <div class="skill-item"><img src="ICONS/JS.png" alt="JS"><span>JavaScript</span></div>
+                <div class="skill-item"><img src="ICONS/JAVA.png" alt="Java"><span>Java</span></div>
+                <div class="skill-item"><img src="ICONS/PHYTON.png" alt="Python"><span>Python</span></div>
+                <div class="skill-item"><img src="ICONS/FIGMA.png" alt="Figma"><span>Figma</span></div>
+                <div class="skill-item"><img src="ICONS/ADOBE.png" alt="Adobe"><span>Adobe Suite</span></div>
+                <div class="skill-item"><img src="ICONS/CANVA.png" alt="Canva"><span>Canva Pro</span></div>
+            </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="reveal">My Projects</h2>
+        <span class="overline reveal text-center">Portfolio</span>
+        <h2 class="section-title reveal text-center">Featured Deliverables</h2>
         
-        <h3 class="task-category reveal">Midterm Tasks <span>Total: 6</span></h3>
+        <div class="category-header reveal">
+            <h3>Midterm Tasks</h3>
+            <span class="badge">Total: 6</span>
+        </div>
         <div class="project-grid reveal">
             <a href="VIEWER HTML/ViewerM1.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/MID1.png" alt="M1"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Midterm Task 1</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span></div></div>
+                <div class="card-img"><img src="PICTURES/MID1.png" alt="M1"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Midterm Task 1</h3><div class="card-tags"><span>HTML</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerM2.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/MID2.png" alt="M2"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Midterm Task 2</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span></div></div>
+                <div class="card-img"><img src="PICTURES/MID2.png" alt="M2"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Midterm Task 2</h3><div class="card-tags"><span>HTML</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerM3.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/MID3.png" alt="M3"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Midterm Task 3</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span></div></div>
+                <div class="card-img"><img src="PICTURES/MID3.png" alt="M3"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Midterm Task 3</h3><div class="card-tags"><span>HTML</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerM4.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/MID4.png" alt="M4"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Midterm Task 4</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span></div></div>
+                <div class="card-img"><img src="PICTURES/MID4.png" alt="M4"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Midterm Task 4</h3><div class="card-tags"><span>HTML</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerM5.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/MID5.png" alt="M5"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Midterm Task 5</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
+                <div class="card-img"><img src="PICTURES/MID5.png" alt="M5"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Midterm Task 5</h3><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerM6.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/MID6.png" alt="M6"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Midterm Task 6</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
+                <div class="card-img"><img src="PICTURES/MID6.png" alt="M6"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Midterm Task 6</h3><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
             </a>
         </div>
 
-        <h3 class="task-category reveal" style="margin-top: 5rem;">Final Tasks <span>Total: 3</span></h3>
+        <div class="category-header reveal mt-5">
+            <h3>Final Tasks</h3>
+            <span class="badge">Total: 3</span>
+        </div>
         <div class="project-grid reveal">
             <a href="VIEWER HTML/ViewerFinal1.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/FINAL1.png" alt="F1"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Final Task 1</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
+                <div class="card-img"><img src="PICTURES/FINAL1.png" alt="F1"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Final Task 1</h3><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerFinal2.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/FINAL2.png" alt="F2"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Final Task 2</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
+                <div class="card-img"><img src="PICTURES/FINAL2.png" alt="F2"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Final Task 2</h3><div class="card-tags"><span>HTML</span><span>CSS</span></div></div>
             </a>
             <a href="VIEWER HTML/ViewerFinal3.html" class="project-card">
-                <div class="card-img"><img src="PICTURES/FINAL3.png" alt="F3"><div class="card-overlay"><span class="view-btn">VIEW OUTPUT</span></div></div>
-                <div class="card-body"><h3>Final Task 3</h3><p>View Output & Code</p><div class="card-tags"><span>HTML</span><span>CSS/BOOTSTRAP</span></div></div>
+                <div class="card-img"><img src="PICTURES/FINAL3.png" alt="F3"><div class="card-overlay"><span>Launch Output &rarr;</span></div></div>
+                <div class="card-body"><h3>Final Task 3</h3><div class="card-tags"><span>HTML</span><span>Bootstrap</span></div></div>
             </a>
+        </div>
+
+        <div class="category-header reveal mt-5">
+            <h3>Final Project</h3>
+            <span class="badge">Featured</span>
+        </div>
+        <div class="project-grid reveal grid-single">
+            <div class="project-card featured-card" id="open-modal">
+                <div class="card-img card-img-large">
+                    <img src="PICTURES/CLAR.jpg" alt="Final Project Preview">
+                    <div class="card-overlay"><span>Tap to View Details &rarr;</span></div>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <h3 class="featured-title">Clarjon University</h3>
+                        <p class="featured-desc">A Group Project showcasing a complete institutional system display, demonstrating comprehensive frontend development skills and design aesthetics.</p>
+                    <div class="card-tags">
+                        <span>System Design</span>
+                        <span>Frontend UI</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-socials">
-            <a href="mailto:jpsantos2663@iskwela.psau.edu.ph"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/jpsnts" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/paumanicdao" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3>Clarjon University</h3>
+                <p>Complete Institutional System Display</p>
+            </div>
+            <div class="modal-body">
+                <img src="PICTURES/CLAR.jpg" alt="Project Mockup">
+            </div>
+            <div class="modal-buttons">
+                <a href="https://clarjon-univ.cjtobias.com/" target="_blank" class="btn-modal-primary"><i class="fas fa-globe"></i> View Website</a>
+                <a href="https://github.com/ddxclipsxdx/clarjon-university" target="_blank" class="btn-modal-secondary"><i class="fab fa-github"></i> View Repository</a>
+            </div>
         </div>
-        <p>&copy; 2026 John Paul Santos </p>
+    </div>
+
+    <footer>
+        <div class="footer-minimal">
+            <a href="#hero" class="footer-logo">S<span>JP</span></a>
+            <div class="footer-socials">
+                <a href="mailto:jpsantos2663@iskwela.psau.edu.ph" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/jpsnts" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/john-paul-santos-b81419303" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2026 John Paul Santos</p>
+        </div>
     </footer>
 
     <script src="SJPortfolio.js"></script>
